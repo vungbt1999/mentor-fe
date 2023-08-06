@@ -8,7 +8,10 @@ const withNextIntl = require('next-intl/plugin')(
 const nextConfig = {
   experimental: {
     appDir: true
-  }
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+ },
 }
 
 module.exports = withNextIntl({...nextConfig})

@@ -32,7 +32,7 @@ const SelectOptions: SelectOptionItem[] = [
 
 export function MainLayout({
   title,
-  isBack = false,
+  isBack = true,
   description,
   edit,
   subtitle,

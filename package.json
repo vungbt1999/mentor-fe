@@ -20,11 +20,13 @@
     "add": "^2.0.6",
     "ag-grid-community": "^30.0.6",
     "ag-grid-react": "^30.0.6",
+    "apexcharts": "^3.41.1",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
     "clsx": "^2.0.0",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "moment": "^2.29.4",
     "next": "13.4.12",
     "next-intl": "^3.0.0-beta.9",
     "postcss": "8.4.27",
@@ -37,6 +39,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "cross-env": "^7.0.3",
     "prettier": "^3.0.1",
     "sass": "^1.64.2"

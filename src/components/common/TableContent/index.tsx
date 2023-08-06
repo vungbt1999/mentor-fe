@@ -47,7 +47,7 @@ const AgGridCustom = <T extends object = any>(
         suppressExcelExport
         columnDefs={columnDefs}
         domLayout="autoHeight"
-        className="ag-theme-material !font-primary"
+        className="ag-theme-material !font-primary text-sm !text-body"
         getRowStyle={(params) => {
           const rowNode = params.node;
           const lastChild = rowNode.lastChild;

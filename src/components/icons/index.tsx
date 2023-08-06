@@ -17,6 +17,7 @@ import HistoryIcon from './history-line';
 import ChevronDown from './chevron-down';
 import ChevronLeft from './chevron-left';
 import ChevronRight from './chevron-right';
+import Reward from './reward';
 
 export type IconProps = {
   className?: string;
@@ -45,7 +46,8 @@ export type IconName =
   | 'history-line'
   | 'chevron-down'
   | 'chevron-left'
-  | 'chevron-right';
+  | 'chevron-right'
+  | 'reward';
 
 export type IconsType = Record<IconName, Icon>;
 
@@ -103,6 +105,9 @@ export const IconsRender: IconsType = {
   },
   'chevron-right': (props: IconProps) => {
     return <ChevronRight {...props} />;
+  },
+  reward: (_: IconProps) => {
+    return <Reward />;
   }
 };
 

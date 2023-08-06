@@ -3,3 +3,7 @@ export * from './Locale';
 export * from './Notification';
 export * from './SelectOption';
 export * from './TableContent';
+export * from './Process';
+export * from './Reward';
+export * from './StatusRate';
+export * from './Charts'
