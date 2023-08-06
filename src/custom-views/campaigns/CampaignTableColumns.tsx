@@ -6,8 +6,8 @@ import { formatDate } from '@/utils/common';
 export const CampaignTableColumns: ColDef<ICampaign>[] = [
   {
     headerName: 'Tên',
-    width: 258 ,
-    maxWidth: 258 ,
+    width: 258,
+    maxWidth: 258,
     cellClass: 'font-bold',
     valueGetter: (params) => params.data?.name
   },

@@ -11,7 +11,10 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
- },
+  },
+  images: {
+    domains: ['cloudflare-ipfs.com'],
+  },
 }
 
 module.exports = withNextIntl({...nextConfig})

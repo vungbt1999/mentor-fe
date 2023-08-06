@@ -6,4 +6,7 @@ export * from './TableContent';
 export * from './Process';
 export * from './Reward';
 export * from './StatusRate';
-export * from './Charts'
+export * from './Charts';
+export * from './UserRank';
+export * from './CheckboxAll';
+export * from './Steps';

@@ -77,7 +77,8 @@ export default function Reward() {
           y1="11.7944"
           x2="15.1875"
           y2="25.7917"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFA705" />
           <stop offset="0.45" stopColor="#FF9605" />
           <stop offset="1" stopColor="#FF8605" />
@@ -88,7 +89,8 @@ export default function Reward() {
           y1="22.2547"
           x2="9"
           y2="16.8119"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFEA05" />
           <stop offset="0.59" stopColor="#FFCB05" />
           <stop offset="1" stopColor="#FFBB05" />
@@ -99,7 +101,8 @@ export default function Reward() {
           y1="6.73187"
           x2="4.37212"
           y2="2.11712"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F03A3A" />
           <stop offset="0.64" stopColor="#CA2525" />
           <stop offset="1" stopColor="#BA1C1C" />
@@ -110,7 +113,8 @@ export default function Reward() {
           y1="6.73187"
           x2="13.6287"
           y2="2.11712"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F03A3A" />
           <stop offset="0.64" stopColor="#CA2525" />
           <stop offset="1" stopColor="#BA1C1C" />
@@ -121,7 +125,8 @@ export default function Reward() {
           y1="6.06587"
           x2="8.99958"
           y2="1.42412"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="white" />
           <stop offset="0.27" stopColor="#E4E7EC" />
           <stop offset="0.75" stopColor="#B9C1CE" />
@@ -133,7 +138,8 @@ export default function Reward() {
           y1="0.974249"
           x2="16.0429"
           y2="0.974249"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFEA05" />
           <stop offset="0.59" stopColor="#FFCB05" />
           <stop offset="1" stopColor="#FFBB05" />
@@ -144,7 +150,8 @@ export default function Reward() {
           y1="3.11162"
           x2="9.00043"
           y2="1.25312"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFEA05" />
           <stop offset="0.59" stopColor="#FFCB05" />
           <stop offset="1" stopColor="#FFBB05" />
@@ -155,7 +162,8 @@ export default function Reward() {
           y1="8.08624"
           x2="15.9232"
           y2="24.9545"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFEA05" />
           <stop offset="0.59" stopColor="#FFCB05" />
           <stop offset="1" stopColor="#FFBB05" />
@@ -166,7 +174,8 @@ export default function Reward() {
           y1="15.8872"
           x2="15.2365"
           y2="9.96294"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="white" />
           <stop offset="0.11" stopColor="white" stopOpacity="0.87" />
           <stop offset="0.44" stopColor="white" stopOpacity="0.5" />
@@ -180,7 +189,8 @@ export default function Reward() {
           y1="20.8888"
           x2="7.18888"
           y2="16.3528"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="white" />
           <stop offset="0.11" stopColor="white" stopOpacity="0.87" />
           <stop offset="0.44" stopColor="white" stopOpacity="0.5" />
@@ -194,7 +204,8 @@ export default function Reward() {
           y1="19.8856"
           x2="2.52936"
           y2="5.9356"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFEA05" />
           <stop offset="0.59" stopColor="#FFCB05" />
           <stop offset="1" stopColor="#FFBB05" />
@@ -205,7 +216,8 @@ export default function Reward() {
           y1="10.0528"
           x2="13.9545"
           y2="22.124"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFA705" />
           <stop offset="0.45" stopColor="#FF9605" />
           <stop offset="1" stopColor="#FF8605" />
@@ -216,7 +228,8 @@ export default function Reward() {
           y1="18.2116"
           x2="5.37545"
           y2="9.89564"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FFEA05" />
           <stop offset="0.59" stopColor="#FFCB05" />
           <stop offset="1" stopColor="#FFBB05" />
@@ -227,7 +240,8 @@ export default function Reward() {
           y1="14.3098"
           x2="12.8865"
           y2="13.0746"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="white" />
           <stop offset="0.11" stopColor="white" stopOpacity="0.87" />
           <stop offset="0.44" stopColor="white" stopOpacity="0.5" />
@@ -241,7 +255,8 @@ export default function Reward() {
           y1="12.834"
           x2="6.11825"
           y2="17.3318"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="white" />
           <stop offset="0.11" stopColor="white" stopOpacity="0.87" />
           <stop offset="0.44" stopColor="white" stopOpacity="0.5" />

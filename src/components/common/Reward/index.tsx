@@ -6,9 +6,9 @@ type RewardCoinProps = {
 
 export function RewardCoin({ coin }: RewardCoinProps) {
   return (
-    <div className='flex items-center text-sm font-bold h-full'>
+    <div className="flex items-center text-sm font-bold h-full">
       <Icons name="reward" />
-      <p className='ml-2'>{coin} Golds</p>
+      <p className="ml-2">{coin} Golds</p>
     </div>
   );
 }

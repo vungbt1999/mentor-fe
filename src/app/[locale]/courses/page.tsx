@@ -1,5 +1,10 @@
-import React from 'react';
+import { CreateEditProvider } from '@/custom-views/campaigns/components/CreateEditContext';
+import CampaignCreateEdit from '../campaigns/add/components/CampaignAdd';
 
 export default function CoursesPage() {
-  return <div>CoursesPage</div>;
+  return (
+    <CreateEditProvider>
+      <CampaignCreateEdit />
+    </CreateEditProvider>
+  );
 }

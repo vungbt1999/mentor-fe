@@ -60,12 +60,14 @@ const AgGridCustom = <T extends object = any>(
         }}
         {...props}
       />
-      <PaginationTable
-        total={total}
-        pageSize={pageSize}
-        currentPage={currentPage}
-        onPageChange={onPageChange}
-      />
+      {onPageChange && (
+        <PaginationTable
+          total={total}
+          pageSize={pageSize}
+          currentPage={currentPage}
+          onPageChange={onPageChange}
+        />
+      )}
     </div>
   );
 };

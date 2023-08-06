@@ -1,2 +1,2 @@
-export * from './CampaignTableColumns'
-export * from './types'
+export * from './CampaignTableColumns';
+export * from './types';

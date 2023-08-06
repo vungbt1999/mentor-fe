@@ -18,6 +18,11 @@ import ChevronDown from './chevron-down';
 import ChevronLeft from './chevron-left';
 import ChevronRight from './chevron-right';
 import Reward from './reward';
+import StarRankIcon from './start-rank';
+import ArrowDown from './arrow-down';
+import ArrowUp from './arrow-up';
+import MinusIcon from './minus-line';
+import CloseLine from './close-line';
 
 export type IconProps = {
   className?: string;
@@ -47,7 +52,13 @@ export type IconName =
   | 'chevron-down'
   | 'chevron-left'
   | 'chevron-right'
-  | 'reward';
+  | 'reward'
+  | 'star-rank'
+  | 'arrow-down'
+  | 'arrow-up'
+  | 'check-line'
+  | 'minus-line'
+  | 'close-line';
 
 export type IconsType = Record<IconName, Icon>;
 
@@ -108,6 +119,24 @@ export const IconsRender: IconsType = {
   },
   reward: (_: IconProps) => {
     return <Reward />;
+  },
+  'star-rank': (_: IconProps) => {
+    return <StarRankIcon />;
+  },
+  'arrow-down': (props: IconProps) => {
+    return <ArrowDown {...props} />;
+  },
+  'arrow-up': (props: IconProps) => {
+    return <ArrowUp {...props} />;
+  },
+  'check-line': (props: IconProps) => {
+    return <ArrowUp {...props} />;
+  },
+  'minus-line': (props: IconProps) => {
+    return <MinusIcon {...props} />;
+  },
+  'close-line': (props: IconProps) => {
+    return <CloseLine {...props} />;
   }
 };
 

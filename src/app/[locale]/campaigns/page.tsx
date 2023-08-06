@@ -1,7 +1,8 @@
 'use client';
 import AgGridCustom from '@/components/common/TableContent';
 import { WrapperContainer } from '@/components/layouts';
-import { ColDef } from 'ag-grid-community';
+import { CampaignTableColumns } from '@/custom-views/campaigns';
+import { mockCampaigns } from '@/mocks';
 import { AgGridReact } from 'ag-grid-react';
 import { useMemo, useRef } from 'react';
 
@@ -28,20 +29,7 @@ export default function CampaignsPage() {
       <div className="mt-5">
         <AgGridCustom
           ref={gridRef}
-          rowData={[
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' },
-            { name: 'Test', phone: '0383007243' }
-          ]}
+          rowData={mockCampaigns}
           columnDefs={tableColumns}
           total={100}
           currentPage={1}
@@ -52,30 +40,3 @@ export default function CampaignsPage() {
     </WrapperContainer>
   );
 }
-
-export const CampaignTableColumns: any = [
-  {
-    headerName: 'Tên',
-    width: 300,
-    maxWidth: 300,
-    valueGetter: (params: any) => params.data?.name
-  },
-  {
-    headerName: 'Phone',
-    width: 300,
-    maxWidth: 300,
-    valueGetter: (params: any) => params.data?.phone
-  },
-  {
-    headerName: 'Địa chỉ',
-    width: 200,
-    maxWidth: 200,
-    valueGetter: (params: any) => params.data?.phone
-  },
-  {
-    headerName: 'Email',
-    width: 200,
-    maxWidth: 200,
-    valueGetter: (params: any) => params.data?.phone
-  }
-];

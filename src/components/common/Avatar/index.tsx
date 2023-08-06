@@ -22,7 +22,13 @@ export function Avatar({ name, avatar }: AvatarProps) {
   return (
     <Link href="/profile" className="flex items-center">
       {avatar ? (
-        <Image width={40} height={40} src={avatar.url} alt={avatar?.alt ?? 'avatar'} />
+        <Image
+          width={40}
+          height={40}
+          src={avatar.url}
+          alt={avatar?.alt ?? 'avatar'}
+          className="rounded-full"
+        />
       ) : (
         <div className="w-10 h-10 aspect-square rounded-full bg-gray-100 text-white font-bold flex items-center justify-center">
           {detectName()}
