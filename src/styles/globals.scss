@@ -8,3 +8,28 @@
     @apply text-base text-body font-primary;
   }
 }
+
+a {
+  @apply no-underline text-body m-0 p-0;
+}
+
+p {
+  @apply m-0 p-0;
+}
+
+/* change the font style of a single UI component */
+.ag-theme-material {
+  .ag-header {
+    @apply bg-gray-600 rounded-md border-b-0;
+    height: 42px !important;
+    min-height: 42px !important;
+
+    .ag-header-cell-label {
+      @apply text-gray-200 text-sm font-bold;
+    }
+
+    .ag-header-row {
+      height: 100% !important;
+    }
+  }
+}
