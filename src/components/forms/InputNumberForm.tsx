@@ -73,7 +73,7 @@ export function InputNumberForm({
             onChange={(e) => field.onChange(e.target?.value ? Number(e.target?.value) : undefined)}
             {...props}
           />
-          {error?.message && <p className="ml-3 text-danger-100 text-xs mt-1">{error?.message}</p>}
+          {error?.message && <p className="text-danger-100 text-xs mt-1">{error?.message}</p>}
         </>
       )}
     />

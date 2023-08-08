@@ -36,7 +36,7 @@ export function RangeSliderForm({ control, name, label, defaultValue }: InputFor
             step={1}
             slots={{ thumb: CustomSliderThumb }}
           />
-          {error?.message && <p className="ml-3 text-danger-100 text-xs mt-1">{error?.message}</p>}
+          {error?.message && <p className="text-danger-100 text-xs mt-1">{error?.message}</p>}
         </>
       )}
     />
