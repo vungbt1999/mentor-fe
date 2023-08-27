@@ -23,6 +23,10 @@ import ArrowDown from './arrow-down';
 import ArrowUp from './arrow-up';
 import MinusIcon from './minus-line';
 import CloseLine from './close-line';
+import ArrowRight from './arrow-right';
+import ArrowLeft from './arrow-left';
+import CheckLineIcon from './check-line';
+import Loading from './loading';
 
 export type IconProps = {
   className?: string;
@@ -58,7 +62,10 @@ export type IconName =
   | 'arrow-up'
   | 'check-line'
   | 'minus-line'
-  | 'close-line';
+  | 'close-line'
+  | 'arrow-right'
+  | 'arrow-left'
+  | 'loading';
 
 export type IconsType = Record<IconName, Icon>;
 
@@ -130,13 +137,22 @@ export const IconsRender: IconsType = {
     return <ArrowUp {...props} />;
   },
   'check-line': (props: IconProps) => {
-    return <ArrowUp {...props} />;
+    return <CheckLineIcon {...props} />;
   },
   'minus-line': (props: IconProps) => {
     return <MinusIcon {...props} />;
   },
   'close-line': (props: IconProps) => {
     return <CloseLine {...props} />;
+  },
+  'arrow-right': (props: IconProps) => {
+    return <ArrowRight {...props} />;
+  },
+  'arrow-left': (props: IconProps) => {
+    return <ArrowLeft {...props} />;
+  },
+  loading: (props: IconProps) => {
+    return <Loading {...props} />;
   }
 };
 

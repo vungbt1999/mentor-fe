@@ -1,7 +1,0 @@
-.checkboxContainer {
-  .checkboxCustom:checked {
-    ~ .checkboxShadow {
-      @apply bg-success-200 border-none;
-    }
-  }
-}

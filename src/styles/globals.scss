@@ -5,31 +5,26 @@
 
 @layer base {
   html {
-    @apply text-base text-body font-primary;
+    @apply text-base font-primary text-neutral;
   }
 }
 
 a {
-  @apply no-underline text-body m-0 p-0;
+  @apply no-underline m-0 p-0;
 }
 
 p {
   @apply m-0 p-0;
 }
 
-/* change the font style of a single UI component */
-.ag-theme-material {
-  .ag-header {
-    @apply bg-gray-600 rounded-md border-b-0;
-    height: 42px !important;
-    min-height: 42px !important;
+.select {
+  background-image: none;
+}
 
-    .ag-header-cell-label {
-      @apply text-gray-200 text-sm font-bold;
-    }
+#select-base:focus ~ .select-icon {
+  @apply transition-all rotate-180 duration-300 ease-linear;
+}
 
-    .ag-header-row {
-      height: 100% !important;
-    }
-  }
+.range-slider input::-webkit-slider-thumb {
+  @apply w-5 h-5 bg-base-100 border border-solid border-primary cursor-pointer appearance-none text-white rounded;
 }

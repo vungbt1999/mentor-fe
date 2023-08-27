@@ -30,7 +30,7 @@ export function Avatar({ name, avatar }: AvatarProps) {
           className="rounded-full"
         />
       ) : (
-        <div className="w-10 h-10 aspect-square rounded-full bg-gray-100 text-white font-bold flex items-center justify-center">
+        <div className="w-10 h-10 aspect-square rounded-full bg-base-content text-base-100 font-bold flex items-center justify-center">
           {detectName()}
         </div>
       )}

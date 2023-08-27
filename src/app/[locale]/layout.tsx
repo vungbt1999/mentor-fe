@@ -4,8 +4,6 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import HeaderMain from './header';
-import { ThemeProvider, CssBaseline } from '@mui/material';
-import { materialUiTheme } from '@/configs/themes';
 
 export const metadata: Metadata = {
   title: 'Trang chủ',
@@ -30,17 +28,13 @@ export default async function RootLayout({
   const messages = await getMessages(params.locale);
 
   return (
-    <html lang={params.locale}>
-      <ThemeProvider theme={materialUiTheme}>
-        <CssBaseline />
-
-        <body id="__next" suppressHydrationWarning={true}>
-          <NextIntlClientProvider locale={params.locale} messages={messages}>
-            <HeaderMain />
-            <main>{children}</main>
-          </NextIntlClientProvider>
-        </body>
-      </ThemeProvider>
+    <html lang={params.locale} data-theme="light">
+      <body id="__next" suppressHydrationWarning={true}>
+        <NextIntlClientProvider locale={params.locale} messages={messages}>
+          <HeaderMain />
+          <main>{children}</main>
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }
