@@ -6,7 +6,6 @@ import Logo from '@/components/logo';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect } from 'react';
 
 const Mock = {
   avatar: {
@@ -30,7 +29,6 @@ type HeaderMainProps = {
 export default function HeaderMain({ className }: HeaderMainProps) {
   const { avatar, navigation } = Mock;
   const pathname = usePathname();
-
   return (
     <header className={className}>
       {/** header info */}
@@ -55,7 +53,7 @@ export default function HeaderMain({ className }: HeaderMainProps) {
                 className={clsx(
                   'h-full flex items-center justify-center flex-1 text-base-300 font-bold hover:bg-opacity-30 hover:bg-base-content transition-all',
                   {
-                    'bg-base-content bg-opacity-30': pathname === item.href
+                    'bg-base-content bg-opacity-30': pathname.includes(item.href)
                   }
                 )}
               >

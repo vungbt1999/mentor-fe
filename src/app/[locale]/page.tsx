@@ -1,5 +1,9 @@
-import { DatePickerBase, InputBase, RangeSliderBase } from '@/components/forms';
-import { DateRangePickerBase } from '@/components/forms/DatePicker/DateRangePickerBase';
+import {
+  DatePickerBase,
+  InputBase,
+  RangeSliderBase,
+  DateRangePickerBase
+} from '@/components/forms';
 import MainLayout from '@/components/layouts/MainLayout';
 import { useTranslations } from 'next-intl';
 
@@ -16,12 +20,7 @@ export default function Home() {
       <RangeSliderBase className="mt-10" />
 
       <br />
-      <DatePickerBase />
-      <br />
-      <DatePickerBase size="sm" />
-      <br />
-      <DatePickerBase size="xs" />
-      <br />
+      <DatePickerBase className="max-w-xs" />
       <DateRangePickerBase />
     </MainLayout>
   );

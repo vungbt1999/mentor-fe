@@ -1,5 +1,17 @@
 {
   "Index": {
     "title": "Hello world!"
+  },
+  "Common": {
+    "day": "{number} day",
+    "month": "{number} month",
+    "year": "{number} year",
+    "member": "{number} member",
+    "overview": "Overview",
+    "target": "Target",
+    "news": "News",
+    "campaign": "Campaign",
+    "report": "Report",
+    "setting": "Setting"
   }
 }

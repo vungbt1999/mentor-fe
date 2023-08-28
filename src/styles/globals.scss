@@ -25,6 +25,18 @@ p {
   @apply transition-all rotate-180 duration-300 ease-linear;
 }
 
+.custom-select {
+  &:hover {
+    .icon-select-wrap {
+      @apply border-primary transition-all ease-in-out bg-primary bg-opacity-20;
+
+      .select-icon {
+        @apply text-primary transition-all ease-in-out;
+      }
+    }
+  }
+}
+
 .range-slider input::-webkit-slider-thumb {
   @apply w-5 h-5 bg-base-100 border border-solid border-primary cursor-pointer appearance-none text-white rounded;
 }
@@ -38,6 +50,10 @@ p {
         @apply text-primary transition-all ease-in-out;
       }
     }
+  }
+
+  .react-datepicker-wrapper {
+    @apply w-full;
   }
 
   .react-datepicker-popper {
@@ -82,8 +98,9 @@ p {
               @apply bg-primary text-white;
             }
 
-            .react-datepicker__day--keyboard-selected {
-              @apply bg-primary bg-opacity-20;
+            .react-datepicker__day--keyboard-selected,
+            .react-datepicker__day--today {
+              @apply bg-primary bg-opacity-20 rounded-[0.3rem];
             }
           }
         }

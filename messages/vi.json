@@ -1,5 +1,17 @@
 {
   "Index": {
     "title": "Xin chao!"
+  },
+  "Common": {
+    "day": "{number} ngày",
+    "month": "{number} tháng",
+    "year": "{number} năm",
+    "member": "{number} thành viên",
+    "overview": "Tổng quan",
+    "target": "Mục tiêu",
+    "news": "Tin tức",
+    "campaign": "Chiến dịch",
+    "report": "Báo cáo",
+    "setting": "Cài đặt"
   }
 }

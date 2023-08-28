@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import HeaderMain from './header';
+import { DatePickerConfig } from '@/config/date-picker';
 
 export const metadata: Metadata = {
   title: 'Trang chủ',
@@ -32,7 +33,9 @@ export default async function RootLayout({
       <body id="__next" suppressHydrationWarning={true}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           <HeaderMain />
-          <main>{children}</main>
+          <main>
+            <DatePickerConfig>{children}</DatePickerConfig>
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>
