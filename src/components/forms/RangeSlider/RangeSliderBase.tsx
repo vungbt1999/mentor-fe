@@ -14,11 +14,11 @@ export function RangeSliderBase({
 }: IRangeSliderBaseProps) {
   return (
     <div className={clsx('range-slider', className)}>
-      <div className="relative w-full">
+      {/* <div className="relative w-full">
         <span className="absolute h-10 w-10 transform translate-x[-70%] scale-100 font-medium -top-10 z-10 text-base-content origin-bottom transition-all ease-in-out duration-300">
           100
         </span>
-      </div>
+      </div> */}
       <div className="flex items-center justify-center h-full relative">
         <div className="absolute text-lg text-primary font-bold -left-5">0</div>
         <input
