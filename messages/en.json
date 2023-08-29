@@ -3,15 +3,17 @@
     "title": "Hello world!"
   },
   "Common": {
-    "day": "{number} day",
-    "month": "{number} month",
-    "year": "{number} year",
-    "member": "{number} member",
+    "day": "{number, plural, =1 {# day} other {# days}}",
+    "month": "{number, plural, =1 {# month} other {# months}}",
+    "year": "{number, plural, =1 {# year} other {# years}}",
+    "member": "{number, plural, =1 {# member} other {# members}}",
     "overview": "Overview",
     "target": "Target",
     "news": "News",
     "campaign": "Campaign",
     "report": "Report",
-    "setting": "Setting"
+    "setting": "Setting",
+    "vietnam": "Vietnamese",
+    "english": "English"
   }
 }
