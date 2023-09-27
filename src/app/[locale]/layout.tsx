@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import HeaderMain from './header';
 import { DatePickerConfig } from '@/config/date-picker';
 import { ELocale, getDictionary } from '@/utils/dictionaries';
+import { ThemeProvider } from '@/components/Providers';
 
 export const metadata: Metadata = {
   title: 'Trang chủ',
@@ -24,12 +25,14 @@ export default async function RootLayout({
   return (
     <html lang={params.locale} data-theme="light">
       <body id="__next" suppressHydrationWarning={true}>
-        <NextIntlClientProvider locale={params.locale} messages={messages}>
-          <HeaderMain />
-          <main>
-            <DatePickerConfig>{children}</DatePickerConfig>
-          </main>
-        </NextIntlClientProvider>
+        <ThemeProvider>
+          <NextIntlClientProvider locale={params.locale} messages={messages}>
+            <HeaderMain />
+            <main>
+              <DatePickerConfig>{children}</DatePickerConfig>
+            </main>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
