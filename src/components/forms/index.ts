@@ -5,4 +5,4 @@ export * from './Radio';
 export * from './Select';
 export * from './Input';
 export * from './RangeSlider';
-export * from './Datepicker';
+export * from './DatePicker';
